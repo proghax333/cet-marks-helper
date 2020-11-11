@@ -42,9 +42,10 @@
     if (thirdSubjectName === "Mathematics") {
         tableElement = document.getElementsByClassName('main-info-pnl')[0].children[1].children[0].children[0];
     }
+	
     let additionalInfo = '';
     let totalMarks = 0;
-
+	
     for (let [subjectName, subjectCorrectAnswers] of Object.entries(subjectMarks)) {
         const MARKS_EACH = subjectMarksPer[subjectName];
         const MARKS_OBTAINED = subjectCorrectAnswers * MARKS_EACH;
